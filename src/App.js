@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {useEffect,useState} from 'react'
+import {useState} from 'react'
 
 
 function App() {
   let [movieinfo,setMovieinfo] = useState(null);
   let [title,setTitle] = useState("the avengers");
-useEffect(()=>{
-  getMovieData();
-},[])
+// useEffect(()=>{
+//   getMovieData()
+// },[])
 
 function readTitle(value){
   setTitle(value);
@@ -34,10 +34,11 @@ function getMovieData(){
               <button onClick={getMovieData}>Get Movie</button>
             </div>
             {
+              movieinfo!=null?(
               movieinfo?.Error===undefined?(
             <div className="movie">
               <div className="poster">
-                <img src={movieinfo?.Poster} className="poster-img"/>
+                <img src={movieinfo?.Poster} alt="poster" className="poster-img"/>
               </div>
               <div className="details">
                 <div className="padd">
@@ -60,7 +61,8 @@ function getMovieData(){
             </div>
               ):(
                 <h1>Movie Not Found!</h1>
-              )}
+              )
+              ):(<h1>Find your movie</h1>)}
           </div>
         </div>
     </div>
