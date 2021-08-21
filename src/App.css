@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  /* background-color: rgb(51, 45, 45);
+  color: white; */
 }
 
 .App-logo {
@@ -35,4 +37,72 @@
   to {
     transform: rotate(360deg);
   }
+}
+body{
+  background-color: rgb(51, 45, 45);
+  color: white;
+}
+
+.container{
+  width: 75%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: gray; */
+  margin-left: 15%;
+}
+.padd{
+  padding: 15px;
+}
+.search-field{
+  width: 80%;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+  background-color: rgb(51, 45, 45);
+  color: white;
+  text-indent: 20px;
+}
+.movie{
+  padding: 5px;
+  /* background-color: grey; */
+  margin-top: 30px;
+  justify-content: space-between;
+  display: flex;
+}
+.poster{
+  height: 500px;
+  width: 30%;
+  /* background-color: red; */
+}
+.details{
+  /* height: 500px; */
+  width: 65%;
+  /* background-color: green; */
+}
+.poster-img{
+  width: 100%;
+  height: 100%;
+}
+.padd  p{
+  font-size: 18px;
+}
+h1,h2,h3{
+  margin: 0px;
+}
+.ip-group{
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.ip-group>button{
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 15%;
+  background-color: #1072ec;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
